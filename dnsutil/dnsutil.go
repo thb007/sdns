@@ -119,7 +119,7 @@ func SetEdns0(req *dns.Msg) (*dns.OPT, int, string, bool, bool) {
 
 		opt.SetUDPSize(DefaultMsgSize)
 
-		ops := opt.Option
+		opt := opt.Option
 
 		opt.Option = []dns.EDNS0{}
 
